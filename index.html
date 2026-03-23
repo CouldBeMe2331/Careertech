@@ -273,7 +273,7 @@
         </div>
     </div>
     <div class="content-wrap">
-
+ 
         <div class="alert fade-item">
             <span class="alert-icon">🔴</span>
             <div class="alert-content">
@@ -283,7 +283,7 @@
                 <div style="font-family:'Space Mono',monospace; font-size:0.6rem; letter-spacing:3px; color:rgba(232,21,27,0.55); text-transform:uppercase;">No exceptions — any other character = forfeit</div>
             </div>
         </div>
-
+ 
         <div class="panel fade-item">
             <div class="panel-title"><span class="icon">❓</span> How You Enter Losers</div>
             <ul>
@@ -293,12 +293,12 @@
                 <li>Only character allowed: <strong>Donkey Kong</strong></li>
             </ul>
         </div>
-
+ 
         <div class="red-line"></div>
-
+ 
         <p class="section-label">Format</p>
         <h2 class="section-title">Match <span>Structure</span></h2>
-
+ 
         <div style="display:flex; flex-direction:column; gap:1px; margin-bottom:1.5rem;">
             <div class="format-card fade-item">
                 <div class="format-card-num">Bo3</div>
@@ -329,7 +329,7 @@
                 </div>
             </div>
         </div>
-
+ 
         <div class="two-col fade-item">
             <div class="panel fade-item">
                 <div class="panel-title"><span class="icon">🎮</span> Stage Rules</div>
@@ -350,7 +350,7 @@
                 </ul>
             </div>
         </div>
-
+ 
         <div class="panel fade-item">
             <div class="panel-title"><span class="icon">📣</span> Match Reporting — Required</div>
             <p>Immediately after your match ends, report results to tournament staff. Failure to report promptly may delay the entire tournament.</p>
@@ -360,7 +360,7 @@
                 <li>Characters used by both players</li>
             </ul>
         </div>
-
+ 
         <div class="alert fade-item">
             <span class="alert-icon">⚠️</span>
             <div class="alert-content">
@@ -373,7 +373,124 @@
         </div>
     </div>
 </div>
-
+ 
+<style>
+/* ===== LOSERS BRACKET — BOLD RED-ON-BLACK TEXT OVERRIDES ===== */
+    
+#brackets .panel p,
+#brackets .panel li,
+#brackets .alert-content {
+    color: rgba(232, 21, 27, 0.9) !important;
+    font-size: 1.18rem !important;
+    font-weight: 700 !important;
+    line-height: 1.8 !important;
+}
+ 
+/* List items */
+#brackets .panel ul li,
+#brackets .panel ol li {
+    color: rgba(232, 21, 27, 0.9) !important;
+    font-size: 1.18rem !important;
+    font-weight: 700 !important;
+    border-bottom: 1px solid rgba(232, 21, 27, 0.15) !important;
+}
+ 
+/* Strong tags — full glowing red */
+#brackets .panel li strong,
+#brackets .alert-content strong {
+    color: var(--red) !important;
+    font-weight: 800 !important;
+    letter-spacing: 0.5px !important;
+    text-shadow: 0 0 14px rgba(232, 21, 27, 0.5) !important;
+}
+ 
+/* The red dash bullet */
+#brackets .panel ul li::before {
+    color: var(--red) !important;
+    font-size: 1rem !important;
+    font-weight: 900 !important;
+}
+ 
+/* Panel titles — bright red */
+#brackets .panel-title {
+    color: var(--red) !important;
+    font-size: 1.4rem !important;
+    letter-spacing: 4px !important;
+    text-shadow: 0 0 16px rgba(232, 21, 27, 0.35) !important;
+    border-bottom: 1px solid rgba(232, 21, 27, 0.3) !important;
+}
+ 
+/* Alert heading label */
+#brackets .alert-content strong {
+    color: var(--red) !important;
+    font-size: 0.72rem !important;
+    letter-spacing: 3.5px !important;
+    text-shadow: 0 0 14px rgba(232, 21, 27, 0.45) !important;
+}
+ 
+/* Alert body text */
+#brackets .alert .alert-content {
+    color: rgba(232, 21, 27, 0.9) !important;
+    font-size: 1.18rem !important;
+    font-weight: 700 !important;
+}
+ 
+/* Alert list items */
+#brackets .alert-content ul li {
+    color: rgba(232, 21, 27, 0.9) !important;
+    font-size: 1.12rem !important;
+    font-weight: 700 !important;
+}
+ 
+/* Format card labels — dimmer red so Bo# num pops more */
+#brackets .format-card-label {
+    color: rgba(232, 21, 27, 0.95) !important;
+    font-size: 1.18rem !important;
+    font-weight: 700 !important;
+    letter-spacing: 0.6px !important;
+}
+ 
+/* Format card desc — softer red */
+#brackets .format-card-desc {
+    color: rgba(200, 60, 60, 0.8) !important;
+    font-size: 1.02rem !important;
+    font-weight: 600 !important;
+}
+ 
+/* Format card number */
+#brackets .format-card-num {
+    color: var(--red) !important;
+    font-size: 2.5rem !important;
+    text-shadow: 0 0 22px rgba(232, 21, 27, 0.6) !important;
+}
+ 
+/* Section label */
+#brackets .section-label {
+    color: var(--red) !important;
+    font-size: 0.75rem !important;
+    font-weight: 700 !important;
+    letter-spacing: 5px !important;
+}
+ 
+/* Section title — brighter red with glow */
+#brackets .section-title {
+    color: rgba(232, 21, 27, 0.85) !important;
+    font-size: clamp(2.4rem, 5.5vw, 3.8rem) !important;
+    text-shadow: 0 0 40px rgba(232, 21, 27, 0.3) !important;
+}
+ 
+#brackets .section-title span {
+    color: var(--red) !important;
+    text-shadow: 0 0 30px rgba(232, 21, 27, 0.55) !important;
+}
+ 
+/* Match reporting paragraph */
+#brackets .panel > p {
+    color: rgba(232, 21, 27, 0.9) !important;
+    font-size: 1.15rem !important;
+    font-weight: 700 !important;
+}
+</style>
 <!-- =========== JOIN PAGE =========== -->
 <div id="join" class="page">
     <div class="page-banner">
