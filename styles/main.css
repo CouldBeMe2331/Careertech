@@ -2,12 +2,11 @@
             --red: #E8151B;
             --red-dark: #A00F13;
             --red-glow: rgba(232, 21, 27, 0.4);
-            --blue: #1A3A5C;
-            --blue-mid: #0D2240;
-            --blue-accent: #1E4D7B;
-            --blue-glow: rgba(30, 77, 123, 0.35);
-            --blue-faint: rgba(20, 50, 90, 0.12);
-            --black: #0A0A0A;
+            --blue:        #1A3A7A; 
+            --blue-mid:    #0D2252;   
+            --blue-accent: #1E4D9E;   
+            --blue-glow:   rgba(30, 77, 158, 0.40);  
+            --blue-faint:  rgba(20, 50, 130, 0.14); 
             --black-2: #111111;
             --black-3: #1A1A1A;
             --black-4: #222222;
